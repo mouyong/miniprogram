@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "debug": true,
+  "window": {
+    "navigationBarBackgroundColor": "#06c1ae",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "商家详情",
+    "backgroundColor": "#f0efed",
+    "backgroundTextStyle": "white",
+    "enablePullDownRefresh": false
+  }
+}

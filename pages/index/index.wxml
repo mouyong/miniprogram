@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="box-detail">
+
+    <view class="box-preview">
+      <view class="preview">
+        <image style="width: 100%" mode="widthFix" src="http://p0.meituan.net/440.0/joymerchant/-3868319333362714831-834269-1511933330005.jpg"></image>
+      </view>
+
+      <view class="box-more">
+        <image src="../../images/icons/more.svg"></image>
+        <text>17</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="list poi-info-wrapper">
+
+    <view class="list-box">
+
+      <view class="item">
+
+        <view class="poi-name">
+          <view class="poi-info">
+            <view class="dealcard-brand">德康口腔德康口腔德康口腔德康口腔德康口腔德康口腔</view>
+
+            <view class="rating">
+              <image src="../../images/icons/rating.svg"></image>
+              <image src="../../images/icons/rating.svg"></image>
+              <image src="../../images/icons/rating.svg"></image>
+              <image src="../../images/icons/rating.svg"></image>
+              <image src="../../images/icons/rating.svg"></image>
+              <text class="rating-number">5.0</text>
+
+              <text class="avg-price">人均：¥60</text>
+            </view>
+
+          </view>
+
+        </view>
+      </view>
+
+      <view class="item address">
+
+        <view class="contact">
+          <image src="../../images/icons/location.svg"></image>
+          <text>荔湾区康王北路928号（交通银行后面）</text>
+        </view>
+
+        <view class="contact-phone" bindtap="phonecall">
+          <image class="phonecall" src="../../images/icons/telphone.svg"></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="list">
+    <view class="list-box">
+
+      <view class="item caption">
+        <image src="../../images/icons/tuan.svg"></image>
+        <text class="caption-text">团购（4）</text>
+      </view>
+
+      <block wx:for="{{booking}}">
+        <view class="item box-booking">
+          <view class="card">
+            <image src="{{item.img}}"></image>
+
+            <view class="card-block-right">
+              <view class="title">{{item.title}}</view>
+
+              <view class="price">
+                <text class="price-number">{{item.price}}</text>
+                <text class="del">458元</text>
+                <text class="tag">减10元</text>
+              </view>
+
+              <text class="sold">已售{{item.sold}}</text>
+
+            </view>
+          </view>
+        </view>
+      </block>
+
+      <view class="item bookin-more">
+        <navigator>
+          <text>查看其他团购</text>
+          <image src="../../images/icons/down.svg"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

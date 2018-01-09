@@ -1,0 +1,17 @@
+/**app.wxss**/
+page {
+  height: 100%;
+  color: #444;
+}
+
+image {
+  vertical-align: middle;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f0efed;
+} 
